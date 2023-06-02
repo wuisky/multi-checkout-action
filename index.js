@@ -26,11 +26,11 @@ async function main () {
     }
 
     const dir = path.join(basedir, repository)
-    const parent = path.dirname(dir)
-    const gitignore = path.join(parent, '.gitignore')
+    //const parent = path.dirname(dir)
+    //const gitignore = path.join(parent, '.gitignore')
 
-    await fsp.mkdir(parent, { recursive: false })
-    await fsp.appendFile(gitignore, '\n' + name)
+    //await fsp.mkdir(parent, { recursive: true })
+    //await fsp.appendFile(gitignore, '\n' + name)
 
     await exec(process.execPath, [script], {
       env: {
