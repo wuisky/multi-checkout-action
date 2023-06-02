@@ -25,8 +25,8 @@ async function main () {
       throw new Error('Repository must be in the form of "owner/name[@ref]"')
     }
 
-    const dir = path.join(basedir, repository)
-    console.warn('dir')
+    const dir = path.join(basedir, name)
+    console.warn('checkout dir:')
     console.warn(dir)
     //const parent = path.dirname(dir)
     //const gitignore = path.join(parent, '.gitignore')
