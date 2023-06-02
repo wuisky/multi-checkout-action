@@ -26,6 +26,8 @@ async function main () {
     }
 
     const dir = path.join(basedir, repository)
+    console.warn('dir')
+    console.warn(dir)
     //const parent = path.dirname(dir)
     //const gitignore = path.join(parent, '.gitignore')
 
